@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* ******************** */
+/*      nav MOBILE      */
+/* ******************** */
+
+  .drop_btn {
+    position: fixed;
+    padding: 1px 9px 9px 9px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--b);
+    color: var(--w);
+  }
+
+    .dropdown-content {
+      display: none;
+      position: fixed;
+        width: 260px;
+        height: 300px;
+      top: 0;
+      left: 0;
+        margin-top: 50px;
+        margin-left: 100px;
+      /*box-shadow: 0px 15px 2s0px 0px var(--w);*/
+      border-radius: 5px;
+      border: solid 1px var(--b);
+      background-color: var(--w);
+      overflow: auto;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: var(--b);
+    }
+
+    .show { display: block; }
+
+/* ********************* */
+/*     nav btn MENU      */
+/* ********************* */
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+      width: 1000px;
+  } 
+    
+    .logo {
+      display: flex;
+        height: 64px; 
+        width: 92px;
+    } 
+
+    .logo_mobile {
+      display: flex;
+        height: 34px; 
+        width: 46px;
+    } 
+    
+    .nav div {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+  
+      #nav_btn_menu > li {                
+        display: inline-block;            
+        transition: all .3s ease-in-out;  
+        margin: 0 17px 0 17px;  
+        color: var(--w);
+          letter-spacing: 3px;
+          font-size: 18px;
+          font-weight: 700;
+          font-variant: small-caps;
+      } #nav_btn_menu > li:hover { color: var(--sec_1); 
+      } .active { 
+          text-decoration: underline;
+          text-underline-offset: 10px;
+      }
+     
+/* ********************* */
+/*    nav btn LANGUAGE   */
+/* ********************* */
+
+      #nav_btn_lang > li {               
+        display: inline-block;            
+        margin: 0;                        
+      } input {                           
+          border: hidden;
+          color: var(--w);                           
+        } 
+        
+          .txt_NO { display: block; }                                 /* default befor js        VAR */
+          .txt_EN { display: none;  }                                 /* default befor js        VAR */
+          .txt_RS { display: none;  }                                 /* default befor js        VAR */
+          .NO_btn { background-color: var(--w); color: var(--b); }    /* default befor js        VAR */  
+          .EN_btn { background-color: var(--b); color: var(--w); }    /* default befor js        VAR */
+          .RS_btn { background-color: var(--b); color: var(--w); }    /* default befor js        VAR */
+
+          .NO_btn,
+          .EN_btn,
+          .RS_btn { border-radius: 3px; }

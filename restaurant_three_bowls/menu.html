@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="img/png" size="32x32" href="./img/Logo_1.png" />    
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="css/media.css">
+      <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        
+        <script type="text/javascript" src="js/language_cookie.js"></script> 
+        <script type="text/javascript" src="js/language_switch.js"></script> 
+        <script type="text/javascript" src="js/language_text.js"></script>   
+        <script type="text/javascript" src="js/nav_mobile.js"></script>            
+          <title>Three Bowls</title>  
+          
+          <script type="text/javascript">
+              window.onload = function(){
+                switch_lang(getCookie("language"));
+              }
+          </script>
+  </head>
+  <body>
+  <!-- ---------------------------------------- -->  
+  <!--                NAVIGATION                -->
+  <!-- ---------------------------------------- -->
+  <div class="nav_mobile">
+    <button onclick="myFunction()" class="drop_btn">
+      <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#FFF" fill-rule="evenodd">
+          <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/>
+        </g>
+      </svg>
+    </button>
+    
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li>
+            <a href="index.html">
+              <p class="txt_NO">HJEM</p>
+              <p class="txt_EN">HOME</p>
+              <p class="txt_RS">HJEM/p>
+            </a>
+          </li> 
+          <li>
+            <a href="reservation.html">
+              <p class="txt_NO ">Reservasjon</p>
+              <p class="txt_EN ">Reservation</p>
+              <p class="txt_RS ">Reservasjon</p>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              <p class="txt_NO">Meny</p>
+              <p class="txt_EN">Menu</p>
+              <p class="txt_RS">Meny</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <nav>
+    <div class="nav">
+      <div>
+        <a href="index.html"><img class="logo" src="img/Logo_2.png" alt="LOGO"></a>
+<!-- nav MENU -->
+        <ul id="nav_btn_menu">
+          <li>
+            <a href="reservation.html">
+              <p class="txt_NO ">Reservasjon</p>
+              <p class="txt_EN ">Reservation</p>
+              <p class="txt_RS ">Reservasjon</p>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              <p class="txt_NO active">Meny</p>
+              <p class="txt_EN active">Menu</p>
+              <p class="txt_RS active">Meny</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+<!-- nav LANG -->            
+        <ul id="nav_btn_lang">
+          <li><input class="NO_btn" type="button" value="NO" onclick="switch_lang('NO')"></li>  <!-- js -->
+          <li><input class="EN_btn" type="button" value="EN" onclick="switch_lang('EN')"></li>  <!-- js -->
+          <li><input class="RS_btn" type="button" value="RS" onclick="switch_lang('RS')"></li>  <!-- js -->
+        </ul>
+    </div>
+  </nav>
+  <!-- ---------------------------------------- -->  
+  <!--                 HEADER                 - -->
+  <!-- ---------------------------------------- -->
+  <header>
+    <div class="bg_img"> </div>
+    </nav>
+ 
+  </header>
+  <!-- ---------------------------------------- -->  
+  <!--                 SECTIONS               - -->
+  <!-- ---------------------------------------- -->
+  <main>  
+    <div class="title_menu">
+      <img src="img/Logo_1.png" alt="LOGO">
+      <div>
+        <h1 class="txt_NO">Meny</h1>
+        <h1 class="txt_EN">Menu</h1>
+        <h1 class="txt_RS">Meny</h1>
+      </div>
+    </div>
+
+    <section class="wrapper gallery">
+      <ul>
+        <li><img src="img/Layer_2.png" alt="img" /></li>
+        <li><img src="img/Layer_3.png" alt="img" /></li>
+        <li><img src="img/Layer_4.png" alt="img" /></li>
+        <li><img src="img/Layer_5.png" alt="img" /></li>
+        <li><img src="img/Layer_6.png" alt="img" /></li>
+        <li><img src="img/Layer_7.png" alt="img" /></li>
+        <li><img src="img/Layer_8.png" alt="img" /></li>
+        <li><img src="img/Layer_9.png" alt="img" /></li>
+        <li><img src="img/Layer_11.png" alt="img" /></li>
+        <li><img src="img/Layer_12.png" alt="img" /></li>
+        <li><img src="img/Layer_13.png" alt="img" /></li>
+        <li><img src="img/Layer_14.png" alt="img" /></li>
+      </ul>
+    </section>
+
+    <section class="flex--col btn_reservation">
+      <div>
+        <a href="reservation.html">
+          <h1 class="txt_NO">Bestill en reservasjon</h1>
+          <h1 class="txt_EN">Book a reservation</h1>
+          <h1 class="txt_RS">Bestill en reservasjon</h1>
+        </a>
+      </div>
+    </section>
+  </main> 
+  <!-- ---------------------------------------- -->  
+  <!--                  FOOTER                - -->
+  <!-- ---------------------------------------- -->
+  <footer>   
+      <div class="flex--col for_iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1755.7222019023106!2d5.3169367558353455!3d60.40011135568475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc0279675ca1%3A0x8fc66c16aee4b909!2sRosenkrantzt%C3%A5rnet!5e0!3m2!1sru!2sno!4v1633211452089!5m2!1sru!2sno" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+ 
+      <p class="txt_NO"><small>Nettstedet er designet for selvstudier <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+      <p class="txt_EN"><small>The website is designed for self-study purposes  <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+      <p class="txt_RS"><small>Nettstedet er designet for selvstudier <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+    </footer>
+  </body>
+</html>

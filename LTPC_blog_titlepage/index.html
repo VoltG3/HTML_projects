@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head lang="lv">
+        <meta charset="UTF-8">
+        <meta name="LTPC" content="PD_16/17">
+        <meta name="ieskaite" content="WEB jtehnoloģijas">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Kristiāns Danoss">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+            <title>Ieskaites Darbs</title>
+                <link rel="stylesheet" type="text/css" href="css/styles.css" />
+                <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-width:375px)" />
+                <link rel="stylesheet" type="text/css" href="css/table.css" media="only screen and (max-width:768px) and (min-width:376px)" />
+                <link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+
+                <!-- author: Kristians Danoss -->
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <div class="logo">
+                    <img src="img/ltpv_logo_vide.png" alt="img.jpg">
+                </div>
+               
+                <div class="navbar_dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><p class="mobil_izvelne">Izvēlne</p></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html"><div><strong>Jaunumi</strong></div></a></li>
+                            <a href="index.html"><div><strong>Par mums</strong></div></a></li>
+                            <a href="index.html"><div><strong>Pakalpojumi</strong></div></a></li>
+                            <a href="index.html"><div><strong>Kontakti</strong></div></a></li>
+                        </div>
+                </div>
+                            
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                        function filterFunction() {
+                            var input, filter, ul, li, a, i;
+                                input = document.getElementById("myInput");
+                                filter = input.value.toUpperCase();
+                                div = document.getElementById("myDropdown");
+                                a = div.getElementsByTagName("a");
+                                    for (i = 0; i < a.length; i++) {
+                                        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                            a[i].style.display = "";
+                                    } else {
+                                            a[i].style.display = "none";
+                                            }
+                                    }
+                            }
+                </script>	
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Jaunumi</a></li>
+                        <li><a href="index.html">Par mums</a></li>
+                        <li><a href="index.html">Pakalpojumi</a></li>
+                        <li><a href="index.html">Kontakti</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="section_up">
+                <div><h1>Tīmekļa lapu veidi</h1></div>
+                <div><p>Tīmekļa vietne mūsdienās iedalās daudz un dažādos tipos, bet lielākie un pazīstamākie ir:</p></div>
+                <div class="section_up_tiles">
+                    <ul>
+                        <li><p>Portāls</p></li>
+                        <li><p>Vortāls</p></li>
+                        <li><p>Blogs</p></li>
+                        <li><p>Forums</p></li>
+                    </ul>	
+                </div>    	
+            </div>
+
+            <div><h1>Tīmekļa lapu veidi</h1></div>
+
+            <div class="section_down">
+                <div>
+                    <h3>Portāls</h3>
+                    <p>Portāls ir Tīmekļa vietne ar plašu saturu. Portāls sniedz daudzpusīgu informāciju un parasti nodrošina piekļuvi plašam resursu un pakalpojumu klāstam, piemēram, forumiem jeb diskusijām, meklētājprogrammām, e-pastam ,fotogrāfijām. Portāli aprasti ir dinamiski ģenerētas tīmekļa vietnes, kas piedāvā plaša tematiskā spektra publikācijas, iespējas piedalīties diskusijās, komentēt ievietoto informāciju, bieži arī e-pastu, datorspēles, vārdnīcu, laika ziņas, valūtu kursu kalkulatorus un citus pakalpojumus/informāciju. Latvijas pazīstamākie portāli ir www.tvnet.lv, www.draugiem.lv, www.delfi.lv.</p>
+                </div>
+                <div>
+                    <h3>Vortāls</h3>
+                    <p>Vortāls ir tīmekļa vietne, kas nodrošina informāciju par konkrētas nozares resursiem un pakalpojumiem. Vortāls no portāla atšķiras ar to, ka tajā sniegta informācija kādā konkrētā jomā – web izstrādes vortāls, makšķernieku vortāls, darba sludinājumu vortāls, tūrisma vortāls u. c.    Vortāli nodrošina lietotājus ar attiecīgās nozares jaunumiem, arī ar pētījumiem un statistiku, diskusijām, tiešsaistes līdzekļiem un citiem pakalpojumiem, kas sniedz ziņas par konkrēto jomu. Vortāls var būt arī daudzfunkcionāla vietne, kas veltīta vienai galvenajai tēmai, piemēram, mūzikai.</p>
+                </div>
+                <div> 
+                    <h3>Blogs</h3>
+                    <p>Blogs jeb emuārs ir tīmekļa vietne jeb Web lapa, kuru parasti uztur viena persona, kas tajā publicē rakstus par sev aktuālām tēmām, ikdienas piedzīvojumiem, kā arī ievieto attēlus vai video materiālus. Emuāri pēc satura ir ļoti atšķirīgi – sākot no individuālām dienasgrāmatām, līdz pat politisku kampaņu, uzņēmumu un kopienu žurnāliem. Vairākumā tīmekļa žurnālu apmeklētāji var ierakstīt un lasīt komentārus, tādējādi konkrētajiem emuāriem izveidojas noteikts lasītāju loks.</p>
+                </div>
+                <div>
+                    <h3>Forums</h3>
+                    <p>Ziņojumu dēļi jeb tautā sauktie forumi ir tīmekļa vietnes, kuru saturu veido lietotāji diskutējot par kādu konkrētu vai plašāku tēmu. Forumu ieraksti tiek glabāti datubāzēs un tādējādi tie atšķiras no, piemēram, čata tīmekļa vietnēm, kurās ziņojumi tiek izdzēsti pēc sarunas beigām. Visbiežāk forumi ir publiski pieejami viesiem, bet lai tajos varētu ievietot kādu ziņu ir nepieciešams reģistrēties, vai pieslēgties tīmekļa vietnei.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p class="footer_text"><small>Web lapas izstrādātājs: <strong>Kristiāns Danoss</strong> &copy 2021 Visas tiesības paturētas</small></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: roboto_regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+  
+@font-face {
+    font-family: roboto_bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+/* body { background-color: yellow;} FOR opacity!!*/ 
+
+/* author: Kristians Danoss */
+
+    .navbar          { display: unset; }
+    .navbar_dropdown { display: none;  }
+
+html, body {
+    margin: 0 auto;
+    height: 100%; 
+    font-family: roboto_bold;
+}
+
+body {
+    display: flex;
+        height: 100%;
+        max-width: 1440px;
+    font-family: roboto_regular;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+        height: 100%;  
+}
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+            padding: 20px 10px 20px 10px;
+    }
+
+        .logo {
+            align-self: center;
+        }
+
+        nav li {
+            display: inline;
+            padding-right: 15px;
+        }
+
+    .section_up {
+        background-image: url(../img/data.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        /*opacity: 0.5;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            width: 100%;
+        padding-top: 100px;
+        padding-bottom: 800px;
+        margin-bottom: 25px; /* Atkāpe no Tīmekļa lapu veidi */
+    }
+
+        .section_up > div { 
+            display: flex;
+            align-self: center;
+        }
+            h1 { padding: 0; margin: 0;}
+                
+            .section_up_tiles {
+                display: inline-flex;
+                    justify-content: center;
+                    align-self: center;
+            }
+
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                }
+
+                .section_up li { 
+                    display: inline-flex;
+                    justify-content: center;
+                        width: 80px;
+                        padding: 20px 30px 20px 30px;
+                        margin: 18px;
+                    font-family: roboto_bold;
+                }
+
+    .section_down {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+            margin:  25px 20px 25px 20px;
+    }
+
+        .section_down > div {
+                width: 48%;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+    .footer {
+        margin-top: 30px;
+        padding: 15px 0 15px 0;
+    }
+
+nav                     { background-color: #FAFAFA;                   }
+.section_up li, .footer { background-color: #0F7799; color: white;   }
+.section_up, h1         {                              color: #77990F; }
+h3, a                   {                              color: #0F7799; }
+
+a, li { text-decoration: none;    }
+a     { font-family: roboto_bold; }
+a:hover { 
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+    h1 { padding-top: 35px; }
+    h3 {
+        font-family: roboto_bold;
+            margin: 0 35px 0 35px;
+            padding-bottom: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        
+    }
+    .section_up, .footer, h1, h3 {
+        text-align: center;
+    }
+
+    .section_up p {
+        font-weight: 700;
+    }

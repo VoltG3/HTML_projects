@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@media all and (max-device-width: 768px) and (min-device-width: 376px){
+    
+    /* author: Kristians Danoss */
+
+    .navbar          { display: none; }
+    .navbar_dropdown { display: none; }
+
+    .header { max-width: 768px;}
+    .body { max-width: 768px; }
+    .section_up {
+        max-width: 768px;
+        padding-bottom: 320px;
+    }
+
+    .header { justify-content: center;}
+    .section_down > div { width: 94%; }
+}

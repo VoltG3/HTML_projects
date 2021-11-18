@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="img/png" size="32x32" href="./img/Logo_1.png" />    
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="css/media.css">
+      <link rel="stylesheet" type="text/css" href="css/navigation.css">
+      
+        <script type="text/javascript" src="js/language_cookie.js"></script> 
+        <script type="text/javascript" src="js/language_switch.js"></script> 
+        <script type="text/javascript" src="js/language_text.js"></script>   
+        <script type="text/javascript" src="js/nav_mobile.js"></script>              
+          <title>Three Bowls</title> 
+          
+          <script type="text/javascript">
+              window.onload = function(){
+                switch_lang(getCookie("language"));
+              }
+        </script>
+  </head>
+  <body>
+  <!-- ---------------------------------------- -->  
+  <!--                NAVIGATION                -->
+  <!-- ---------------------------------------- -->
+  <div class="nav_mobile">
+    <button onclick="myFunction()" class="drop_btn">
+      <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#FFF" fill-rule="evenodd">
+          <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/>
+        </g>
+      </svg>
+    </button>
+    
+      <div id="myDropdown" class="dropdown-content">
+        <ul> 
+          <li>
+            <a href="index.html">
+              <p class="txt_NO">HJEM</p>
+              <p class="txt_EN">HOME</p>
+              <p class="txt_RS">HJEM/p>
+            </a>
+          </li> 
+          <li>
+            <a href="reservation.html">
+              <p class="txt_NO ">Reservasjon</p>
+              <p class="txt_EN ">Reservation</p>
+              <p class="txt_RS ">Reservasjon</p>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              <p class="txt_NO">Meny</p>
+              <p class="txt_EN">Menu</p>
+              <p class="txt_RS">Meny</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <nav>
+    <div class="nav">
+      <div>
+        <a href="index.html"><img class="logo" src="img/Logo_2.png" alt="LOGO"></a>
+<!-- nav MENU -->
+        <ul id="nav_btn_menu">
+          <li>
+            <a href="reservation.html">
+              <p class="txt_NO active">Reservasjon</p>
+              <p class="txt_EN active">Reservation</p>
+              <p class="txt_RS active">Reservasjon</p>
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              <p class="txt_NO">Meny</p>
+              <p class="txt_EN">Menu</p>
+              <p class="txt_RS">Meny</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+<!-- nav LANG -->            
+        <ul id="nav_btn_lang">
+          <li><input class="NO_btn" type="button" value="NO" onclick="switch_lang('NO')"></li>  <!-- js -->
+          <li><input class="EN_btn" type="button" value="EN" onclick="switch_lang('EN')"></li>  <!-- js -->
+          <li><input class="RS_btn" type="button" value="RS" onclick="switch_lang('RS')"></li>  <!-- js -->
+        </ul>
+    </div>
+  </nav>
+  <!-- ---------------------------------------- -->  
+  <!--                 HEADER                 - -->
+  <!-- ---------------------------------------- -->
+  <header> 
+    
+
+    <section class="reservation">
+      <div class="flex--col reservation_container">
+        <div>
+        <h1 class="txt_NO">Bestill en reservasjon</h1>
+        <h1 class="txt_EN">Book a Reservation</h1>
+        <h1 class="txt_RS">Bestill en reservasjon</h1>
+      </div>
+      <div>
+        <p class="txt_NO"><em>TREE BOLLER</em> Restaurant <u>ligger bare som html eksempel,</u> men er åpen for middag søndager til onsdager fra 17.00 til 22.00, og torsdager til lørdager fra 17.00 til 22.30.</p>
+        <p class="txt_EN"><em>THREE BOWLS</em> Restaurant is <u>located just as html exempel,</u> but is open for dinner Sundays through Wednesdays from 5pm to 10pm, and Thursdays through Saturdays from 5pm to 10:30pm.</p>
+        <p class="txt_RS"><em>TREE BOLLER</em> Restaurant <u>ligger bare som html eksempel,</u> men er åpen for middag søndager til onsdager fra 17.00 til 22.00, og torsdager til lørdager fra 17.00 til 22.30.</p>
+      </div>
+          
+              
+      
+        <!-- <form action="/action_page.php"> -->
+          <form>
+          <label for="name">Name :</label>
+            <input style="border: solid 1px var(--b); color: var(--b);" type="text" id="name" name="name"><br><br>
+          
+          <label for="phone">Phone :</label>
+            <input style="border: solid 1px var(--b); color: var(--b);" type="text" id="phone" name="phone"><br><br>
+
+          <label for="start">Date :</label>
+            <input style="border: solid 1px var(--b); color: var(--b);" type="date" id="start" name="trip-start"
+                  value="2018-07-22"
+                  min="2018-01-01" max="2018-12-31"><br><br>
+
+          <input style="border: solid 1px var(--b); color: var(--b);"  type="submit" value="Submit" onclick="show_reservation()">
+
+                  <script>
+                    function show_reservation() {
+                      alert('Thanks for notreservation!');
+                    }
+                  </script>
+        </form>
+    </section>
+   
+  
+  </header>
+  <!-- ---------------------------------------- -->  
+  <!--                 SECTIONS               - -->
+  <!-- ---------------------------------------- -->
+  <main> 
+    <section class="flex--col info">
+      <div>
+        <ul> 
+          <h3 class="txt_NO">Healt and Safety</h3>
+          <h3 class="txt_EN">Helse og sikkerhet</h3>
+          <h3 class="txt_RS">Healt and Safety</h3>
+            <li>
+              <p class="txt_NO">Hos Tree Boller legger vi det største fokuset på helse og sikkerhet for våre gjester og ansatte, samtidig som vi opprettholder en hyggelig og behagelig opplevelse. Følgende retningslinjer vil være på plass:</p>
+              <p class="txt_EN">At Three Bowls, we place the utmost focus on the health and safety of our guests and staff, while maintaining a pleasant and comfortable experience. The following policies will be in place:</p>
+              <p class="txt_RS">Hos Tree Boller legger vi det største fokuset på helse og sikkerhet for våre gjester og ansatte, samtidig som vi opprettholder en hyggelig og behagelig opplevelse. Følgende retningslinjer vil være på plass:</p>
+            </li>
+        </ul>
+        
+         <ul> 
+          <h5 class="txt_NO">Protokoll</h5>
+          <h5 class="txt_EN">Protocols</h5>
+          <h5 class="txt_RS">Protokoll</h5>
+            <li>
+              <p class="txt_NO">I lys av COVID-19-pandemien, og i samsvar med krav og veiledning fra Centers for Disease Control, offentlige helsemyndigheter, vil alle gjester (unntatt barn under 12 år) være kreves for å vise bevis på minst én dose av en FDA-godkjent COVID-19-vaksine for å spise på Print Restaurant. Ved ankomst for reservasjonen må hver gjest vise gyldig legitimasjon og vaksinasjonskort eller digitalt helsekort.</p>
+              <p class="txt_EN">In light of the COVID-19 pandemic, and in accordance with requirements and guidance issued by the Centers for Disease Control, and public health authorities, all guests (excluding children under the age of 12) will be required to show proof of at least one dose of an FDA approved COVID-19 vaccine to dine at Print Restaurant.  Upon arrival for your reservation, each guest must present a valid ID and vaccination card or digital health pass.</p>
+              <p class="txt_RS">I lys av COVID-19-pandemien, og i samsvar med krav og veiledning fra Centers for Disease Control, offentlige helsemyndigheter, vil alle gjester (unntatt barn under 12 år) være kreves for å vise bevis på minst én dose av en FDA-godkjent COVID-19-vaksine for å spise på Print Restaurant. Ved ankomst for reservasjonen må hver gjest vise gyldig legitimasjon og vaksinasjonskort eller digitalt helsekort.</p>
+            </li>
+            <li>
+              <p class="txt_NO">Reservasjoner vil bli akseptert for grupper på opptil 10 gjester. Fester større enn 10 vil bli henvist til det private arrangementsteamet.</p>
+              <p class="txt_EN">Reservations will be accepted for parties up to 10 guests. Parties larger than 10 will be referred to the private events team.</p>
+              <p class="txt_RS">Reservasjoner vil bli akseptert for grupper på opptil 10 gjester. Fester større enn 10 vil bli henvist til det private arrangementsteamet.</p>
+            </li>
+            <li>
+              <p class="txt_NO">Utenfor mat (inkludert kaker eller cupcakes) eller drikke er ikke tillatt på <em>TRHREE BOWLS.</em></p>
+              <p class="txt_EN">Outside food (including cakes or cupcakes) or beverages are not permitted at <em>TRHREE BOWLS.</em></p>
+              <p class="txt_RS">Utenfor mat (inkludert kaker eller cupcakes) eller drikke er ikke tillatt på <em>TRHREE BOWLS.</em></p>
+            </li>
+        </ul>     
+
+        <ul> 
+          <h5 class="txt_NO">Service</h5>
+          <h5 class="txt_EN">Service</h5>
+          <h5 class="txt_RS">Service</h5>
+            <li>
+              <p class="txt_NO">Berøringsfrie menyer vil være tilgjengelige for gjester som bruker smarttelefoner med QR -kodelesere; Engangsmenyer vil være tilgjengelige på forespørsel fra gjesten.</p>
+              <p class="txt_EN">Touchless menus will be available for guests using smart phones with QR code readers; disposable menus will be available at the request of the guest.</p>
+              <p class="txt_RS">Berøringsfrie menyer vil være tilgjengelige for gjester som bruker smarttelefoner med QR -kodelesere; Engangsmenyer vil være tilgjengelige på forespørsel fra gjesten.</p>
+            </li>
+            <li>
+              <p class="txt_NO">Berøringsfrie betalingsalternativer vil være tilgjengelige.</p>
+              <p class="txt_EN">Touchless payment options will be available.</p>
+              <p class="txt_RS">Berøringsfrie betalingsalternativer vil være tilgjengelige.</p>
+            </li>
+        </ul>
+      </div>
+    </section>
+  </main> 
+  <!-- ---------------------------------------- -->  
+  <!--                  FOOTER                - -->
+  <!-- ---------------------------------------- -->
+  <footer>   
+      <div class="flex--col for_iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1755.7222019023106!2d5.3169367558353455!3d60.40011135568475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc0279675ca1%3A0x8fc66c16aee4b909!2sRosenkrantzt%C3%A5rnet!5e0!3m2!1sru!2sno!4v1633211452089!5m2!1sru!2sno" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+ 
+      <p class="txt_NO"><small>Nettstedet er designet for selvstudier <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+      <p class="txt_EN"><small>The website is designed for self-study purposes  <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+      <p class="txt_RS"><small>Nettstedet er designet for selvstudier <strong>VoltG3</strong> &copy 2021 All rights not reserved</small></p>
+    </footer>
+  </body>
+</html>
