@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td>Restaurant_Three_Bowls</td>
-    <td>Exercise project</td>
+    <td>Exercise Project</td>
   </tr>
 </table>
 
