@@ -6,7 +6,7 @@
     <td>Blog tittle page</td>
   </tr>
   <tr>
-    <td>Restaurant_three_bowls</td>
+    <td>Restaurant_Three_Bowls</td>
     <td>Exercise project</td>
   </tr>
 </table>
