@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="css/tree.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script type="text/javascript" src="js/typewriter.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXEKL3ZD7T"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EXEKL3ZD7T');
+        </script>	 
+  </head>
+  <body>
+
+    <header class="flex--row--centerY navigation shadow">
+      <div class="navigation">
+        <a href="index.html">Portfolio</a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="figma.html">Figma</a></li>
+          <li><a href="phpmysql.html">PHP/MySQL</a></li>
+          <li><a href="htmlcss.html">HTML/CSS</a></li>
+          <li><a href="js.html">JavaScript</a></li>
+          <li><a href="cpp.html">C++</a></li>
+          <li><a href="adobe.html">Adobe</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <a class="activ" href="ommeg.html">Om meg</a>
+      </div>
+    </header>
+
+    <main class="flex--col--centerY">
+      <div class="flex--row ommeg_content fade_1s">
+        <div class="flex--col ommeg_img">
+          <img src="img/portrets.jpg" alt="img">
+        </div>
+        <div id="ommeg" class="flex--col ommeg_text">
+          <p>Mitt navn er Kristian. Jeg har vært opptatt av IT siden middelalderen: MS-DOS / Win 3.1</p>
+          <p>På tiden lærer jeg mye om HTML / CSS / JS / Figma i KodeHode. Jeg liker å samarbeide i gruppe. 
+           Fordypning inn i stadige utfordringer i problemløsninger.</p>
+          <p>Mine hobbyer er historie før steinalderen, hedenskap, eksperimentell arkeologi og å spille munnharpa.
+           Jeg trivers med å utforske det metanivået av programmer samt interaksjoner og sammenheger gjennom de. 
+           Har hat diverse basic kurs inni i BackEnd, CLI-Linux. Ser frem etter en miljø hvor eg kan etterhvert 
+           vokse til FullStack.</p>
+        </div>
+
+        <div class="ommeg_info">
+          <h3>#Utdanning</h3>
+          <p>Nettbasert - Multimedia design nivå 3 - varughet 18 måneder</p>
+          <p>Nettbasert - Programming tehnikker nivå 3 - varughet 18 måneder</p>
+          <h3>#Arbeidserfaring</h3>
+          <p>Praksis - IKT InfoCare (reparasjon / installasjon) ca. 5 år siden</p>
+          <h3>#Kurs</h3>
+          <p>IBM PC Maintenance - ca.18 år side</p>
+          <h3>#Frivillig</h3>
+          <p>Latvisk kulturforening - IT admin</p>
+        </div>  
+      </div> 
+
+      <script type="text/javascript">
+        let el = document.getElementById('ommeg')
+        printText(el);
+      </script>
+    </main>
+
+    <footer class="flex--row--center--cetner">
+      <small>Web lapas izstrādātājs: <strong>VoltG3</strong> &#169 2021 visas tiesības paturētas.</small>
+    </footer>
+  </body>
+</html>

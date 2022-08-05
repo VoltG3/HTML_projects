@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 600px){
+  .section--center {
+    display: grid; 
+    grid-template-rows: 0.6fr 1.8fr 0.6fr; 
+    grid-template-columns: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "side--right" 
+      "side--center" 
+      "side--left"; 
+    grid-area: section--center; 
+  }
+}
+

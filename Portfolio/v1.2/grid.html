@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+:root {
+    --header:  #193042; 
+    --text:    #fff;
+    --hover:   yellow;
+    --active:  rgb(143, 143, 37); 
+    --border:  grey;
+    --shadow:  rgba(0,0,0,0.5);
+    --aside:   rgba(26, 47, 66, 0.5);
+    --aside2:  rgba(0, 0, 0, 0.5);
+    --bg_img_mono: url(img/bg_mono.jpg);
+    --logo: url(../img/logo.png);
+  }
+
+    html, body {
+      margin: 0 auto;
+      height: auto;
+    }
+
+    body {
+      display: grid; 
+        width: calc(100vw);
+        height: calc(100vh);
+      grid-template-areas: 
+        "page";   
+      } 
+    
+    .page {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.2fr 2.5fr 0.3fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "section--header"
+        "section--center"
+        "section--footer"; 
+      grid-area: page; 
+    } 
+
+
+    .section--center {
+      display: grid; 
+      grid-template-columns: 0.6fr 1.8fr 0.6fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "side--left side--center side--right"; 
+      grid-area: section--center; 
+    }
+
+    .section--header { grid-area: section--header; background-color: blue;}
+    .section--center { grid-area: section--center; background-color:rgba(0, 0, 0, 0.5);}
+      .side--left    { grid-area:    side--left;   }
+      .side--center  { grid-area:    side--center;}
+      .side--right   { grid-area:    side--right; }
+    .section--footer { grid-area: section--footer; background-color: blue;}
+
+    .page--bg {
+      background: var(--bg_img_mono);
+      background-position-Y: -235px;
+    }
+
+    .bg {
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    video {
+      position: absolute;
+      object-fit: cover; 
+        width:100%;
+        height:100%;
+          top: 50%;
+          left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    </style>
+  </hrad>
+  <body> 
+
+    <section class="page bg page--bg">
+
+      <!--  <video src="video/bg_video_1920x1080.mp4" playsinline autoplay muted loop></video>  -->
+
+      <section class="section--header"></section>  
+        <section class="section--header"></section>
+        <section class="section--center">
+          <section class="side--left"></section>
+          <section class="side--center"></section>
+          <section class="side--right"></section>
+        </section>
+      <section class="section--footer"></section>
+    </section>
+    
+    
+   
+   
+  </body>  
+</html>
