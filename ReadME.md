@@ -4,13 +4,15 @@
   <tr>
     <td>LTPC_blog_titlepage</td>
     <td>Blog tittle page</td>
-    <td>Portfolio</td>
   </tr>
   <tr>
     <td>Restaurant_Three_Bowls</td>
     <td>Exercise Project</td>
-    <td>Old Portfolio</td>
   </tr>
+  <tr>
+    <td>Portfolio</td>
+    <td>Old Portfolio</td>
+  </tr>  
 </table>
 
 ---
