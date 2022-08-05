@@ -38,9 +38,9 @@ ___
 
 <table>
   <tr>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML/blob/master/restaurant_three_bowls/screenshot_1.png" alt="img"></td>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML/blob/master/restaurant_three_bowls/screenshot_2.png" alt="img"></td>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML/blob/master/restaurant_three_bowls/screenshot_3.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/html_projects/blob/master/restaurant_three_bowls/screenshot_1.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/html_projects/blob/master/restaurant_three_bowls/screenshot_2.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/html_projects/blob/master/restaurant_three_bowls/screenshot_3.png" alt="img"></td>
   <tr>
  </table>
 
