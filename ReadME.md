@@ -28,7 +28,7 @@
 
 ---
 
-## Project Restaurant
+## Restaurant
 <table>
   <tr>
     <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML/blob/master/restaurant_three_bowls/screenshot_1.png" alt="img"></td>
@@ -37,11 +37,11 @@
   <tr>
  </table>
  
- ## Project Portfolio
+ ## Portfolio
 <table>
   <tr>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/img/desktop1.png" alt="img"></td>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/img/desktop2.png" alt="img"></td>
-    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/img/desktop3.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/desktop1.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/desktop2.png" alt="img"></td>
+    <td style ="width: 33%;" ><img src="https://github.com/VoltG3/HTML_projects/blob/master/Portfolio/desktop3.png" alt="img"></td>
   <tr>
  </table>
